@@ -18,6 +18,7 @@ function onSubmitForm(event) {
   event.preventDefault();
   event.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
+  console.log('Object', formData);
 }
 
 function reloadMemory() {
@@ -30,4 +31,3 @@ function reloadMemory() {
     });
   }
 }
-console.log('Object', formData);
